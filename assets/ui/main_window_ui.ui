@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>911</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="window_head_layout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="header_icon_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>icon</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="header_app_name_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 255);
+font: 12pt &quot;幼圆&quot;;
+font-weight:  bold;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 8px;</string>
+          </property>
+          <property name="text">
+           <string>AppName</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="header_center_label">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(120, 120, 120);
+font: 9pt &quot;Microsoft YaHei&quot;;
+letter-spacing: -0.4px</string>
+          </property>
+          <property name="text">
+           <string>----------</string>
+          </property>
+          <property name="textInteractionFlags">
+           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="header_min_btn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	color: rgb(255, 170, 0);
+	background-color: rgb(255, 170, 0);
+	min-width: 14px;
+	max-width: 14px;
+	min-height: 14px;
+	max-height: 14px;
+	border-radius: 7px;
+}
+
+QPushButton::hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(245, 160, 0);
+}
+
+QPushButton::pressed{
+	color: rgb(255, 255, 255);
+	background-color: rgb(230, 150, 0);
+}</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="header_max_btn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	margin-left: 5px;
+	margin-right: 5px;
+	color: rgb(0, 255, 0);
+	background-color: rgb(0, 255, 0);
+	min-width: 14px;
+	max-width: 14px;
+	min-height: 14px;
+	max-height: 14px;
+	border-radius: 7px;
+}
+
+QPushButton::hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 244, 0);
+}
+
+QPushButton::pressed{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 233, 0);
+}</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="header_close_btn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	color: rgb(255, 0, 0);
+	background-color: rgb(255, 0, 0);
+	min-width: 14px;
+	max-width: 14px;
+	min-height: 14px;
+	max-height: 14px;
+	border-radius: 7px;
+}
+
+QPushButton::hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(244, 0, 0);
+}
+
+QPushButton::pressed{
+	color: rgb(255, 255, 255);
+	background-color: rgb(233, 0, 0);
+}</string>
+          </property>
+          <property name="text">
+           <string>×</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_4" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>8</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>8</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>1</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(207, 207, 207);</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,1">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QScrollArea {
+	border: none
+}
+QWidget {
+	min-width: 60px;
+}
+
+QPushButton {
+	min-height: 30px;
+	min-width: 60px;
+	border: none;
+	border-radius: 15px;
+	color: rgb(120, 120, 120);
+	font: 10pt &quot;Microsoft YaHei&quot;;
+}
+
+QPushButton::hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(138, 138, 255);
+}
+
+QPushButton::pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 255);
+}</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="left_widget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>120</width>
+               <height>511</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>60</width>
+               <height>0</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>1</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(207, 207, 207);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTabWidget" name="content_tw">
+            <property name="styleSheet">
+             <string notr="true">/* 选项卡样式 */
+QTabWidget::tab {
+max-height: 0;
+max-width: 0;
+margin: 0;
+padding: 0;
+border: none;
+}
+QTabWidget{
+border: none;
+}
+QTabWidget::pane{
+border: none;
+}
+
+
+QMenu {
+background-color: #f0f0f0;
+border: 1px solid #cccccc;
+padding: 4px;
+}
+
+QMenu::item {
+padding: 12px 24px;
+margin: -4px;
+}
+
+QMenu::item:selected {
+background-color: #e0e0e0;
+}
+
+QAction {
+color: #333333;
+font-size: 14px;
+}
+
+</string>
+            </property>
+            <property name="tabPosition">
+             <enum>QTabWidget::North</enum>
+            </property>
+            <property name="tabShape">
+             <enum>QTabWidget::Rounded</enum>
+            </property>
+            <property name="currentIndex">
+             <number>-1</number>
+            </property>
+            <property name="elideMode">
+             <enum>Qt::ElideNone</enum>
+            </property>
+            <property name="documentMode">
+             <bool>false</bool>
+            </property>
+            <property name="tabsClosable">
+             <bool>false</bool>
+            </property>
+            <property name="tabBarAutoHide">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
